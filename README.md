@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![](https://img.shields.io/travis/cassels/unhoc/master.svg)](https://travis-ci.org/cassels/UnHOC)
+[![](https://img.shields.io/travis/cassels/UnHOC/master.svg?style=flat-square)](https://travis-ci.org/cassels/UnHOC)
 [![Contributors](https://img.shields.io/github/contributors/cassels/unhoc.svg?style=flat-square)](README.md#Contributors)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/github/license/cassels/unhoc.svg?style=flat-square)](LICENSE)
