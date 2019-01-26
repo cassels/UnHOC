@@ -18,6 +18,7 @@
   "author": "Graeme Cassels <graeme.cassels@googlemail.com> (https://github.com/cassels)",
   "license": "MIT",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -29,7 +30,7 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && rm -f lib"
+    "clean": "rm -rf node_modules && rm -rf lib"
   },
   "devDependencies": {
     "@material-ui/core": "^3.9.0",

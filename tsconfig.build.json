@@ -24,10 +24,21 @@
   // Empty files so we never build this folder by mistake
   "files": [],
 
+  "exclude": ["**/**/*.spec.tsx"],
+
   // All the packages that needs building
   "references": [
     {
       "path": "packages/core/tsconfig.build.json"
+    },
+    {
+      "path": "packages/react/tsconfig.build.json"
+    },
+    {
+      "path": "packages/react-redux/tsconfig.build.json"
+    },
+    {
+      "path": "packages/material-ui/tsconfig.build.json"
     }
   ]
 }

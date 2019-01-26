@@ -16,6 +16,7 @@
   "homepage": "",
   "license": "MIT",
   "main": "lib/core.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -27,6 +28,6 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && rm -f lib"
+    "clean": "rm -rf node_modules && rm -rf lib"
   }
 }
