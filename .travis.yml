@@ -8,7 +8,7 @@ cache:
 
 script: yarn test:ci
 
-before_deploy: "echo 'before deploy'""
+before_deploy: "echo 'before deploy'"
 
 deploy:
   provider: script
