@@ -1,0 +1,10 @@
+// Dev (not build) tsconfig
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@unhoc/*": ["packages/*/src/index.ts"]
+    }
+  }
+}
