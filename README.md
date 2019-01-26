@@ -144,10 +144,10 @@ yarn lint
   - [ ] Developing a Plugin
 - [ ] Development
   - [x] Add LICENSE
-  - [ ] CONTRIBUTING
-  - [ ] CODE_OF_CONDUCT
+  - [x] CONTRIBUTING
+  - [x] CODE_OF_CONDUCT
   - [x] Add Lerna
-  - [ ] Add Git Hooks
+  - [x] Add Git Hooks
   - [ ] Add CI/CD
 
 ## Versioning
