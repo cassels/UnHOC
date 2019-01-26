@@ -8,7 +8,7 @@
     "lint": "prettier --write '**/**/*.{ts,tsx,js,jsx}'",
     "clean": "rm -rf node_modules && yarn workspaces run clean",
     "build": "tsc --build tsconfig.build.json",
-    "publish": "lerna publish prepatch --yes --loglevel=verbose"
+    "publish": "lerna publish prepatch --yes --loglevel=verbose --skip-git --no-changelog"
   },
   "workspaces": [
     "packages/*"
