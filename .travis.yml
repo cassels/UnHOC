@@ -8,12 +8,15 @@ cache:
 
 script: yarn test:ci
 
-before_deploy: "echo 'before deploy'"
+before_deploy:
+  - "echo 'before deploy'"
 
 deploy:
   provider: script
-  script: yarn run publish
+  script: 'yarn run publish'
+  skip_cleanup: true
   on:
     branch: cd
 
-after_deploy: "echo 'after deploy'"
+after_deploy:
+  - "echo 'after deploy'"
