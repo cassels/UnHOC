@@ -1,4 +1,12 @@
 language: node_js
 node_js: 'lts/*'
 
+cache: yarn
+
 script: yarn test:ci
+
+deploy:
+  provider: script
+  script: yarn publish
+  on:
+    branch: master

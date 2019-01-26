@@ -7,7 +7,8 @@
     "test:watch": "jest --watchAll",
     "lint": "prettier --write '**/**/*.{ts,tsx,js,jsx}'",
     "clean": "rm -rf node_modules && yarn workspaces run clean",
-    "build": "tsc --build tsconfig.build.json"
+    "build": "tsc --build tsconfig.build.json",
+    "publish": "lerna publish prepatch"
   },
   "workspaces": [
     "packages/*"
