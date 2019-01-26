@@ -1,6 +1,19 @@
 language: node_js
 node_js: 'lts/*'
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - 'node_modules'
 
 script: yarn test:ci
+
+before_deploy: "echo 'before deploy'""
+
+deploy:
+  provider: script
+  script: yarn run publish
+  on:
+    branch: cd
+
+after_deploy: "echo 'after deploy'"
