@@ -4,9 +4,3 @@ node_js: 'lts/*'
 cache: yarn
 
 script: yarn test:ci
-
-deploy:
-  provider: script
-  script: yarn run publish
-  on:
-    branch: master
