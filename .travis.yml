@@ -7,6 +7,6 @@ script: yarn test:ci
 
 deploy:
   provider: script
-  script: yarn publish
+  script: yarn run publish
   on:
     branch: master
