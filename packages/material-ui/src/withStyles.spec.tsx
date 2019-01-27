@@ -27,7 +27,7 @@ describe('material-ui', () => {
     test('use without error', () => {
       expect(() => {
         createUnHOC({
-          plugins: [unHOCWithStyles(styles, options)],
+          plugins: [unHOCWithStyles()],
         })(<WithStylesComponent comp="comp" />);
       }).not.toThrow();
     });

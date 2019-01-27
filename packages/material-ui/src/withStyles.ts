@@ -3,7 +3,7 @@ import * as React from 'react';
 import jss, { StyleSheetFactoryOptions } from 'jss';
 
 export const unHOCWithStyles = (
-  styles: { [key: string]: any },
+  styles: { [key: string]: any } = {},
   options?: StyleSheetFactoryOptions
 ): UnHOCPlugin => (node, next) => {
   if (
