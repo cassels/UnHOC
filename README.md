@@ -19,23 +19,21 @@ _Effortlessly **Un**wrap React **HOC**s for simple unit testing._
 
 ## Installation
 
-<sub>_The following will not work as no packages have been published_</sub>
-
 Npm
 
 ```
-npm install --save-dev @unhoc/core [UnHOC Packages]
+npm install @unhoc/core [UnHOC Packages] --save-dev
 ```
 
 Yarn
 
 ```
-yarn add --save-dev @unhoc/core [UnHOC Packages]
+yarn add @unhoc/core [UnHOC Packages] --dev
 ```
 
 ## Motivation
 
-A [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) (HOC) is an incredibly popular design pattern within the React ecosystem useful for reusing common component logic. Many popular third-party libraries implement this pattern such as [Redux](https://github.com/reduxjs/redux), [React Router](https://github.com/ReactTraining/react-router), and [Material-UI](https://github.com/mui-org/material-ui).
+A [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) (HOC) is an incredibly popular design pattern within the React ecosystem useful for reusing common component logic. Many popular third-party libraries implement this pattern such as [React Redux](https://github.com/reduxjs/react-redux), [React Router](https://github.com/ReactTraining/react-router), and [Material-UI](https://github.com/mui-org/material-ui).
 
 A HOC is simply a function that takes one component and returns a new component with enhanced functionality.
 
@@ -55,7 +53,37 @@ All of these solutions are far from perfect and that's where **U**n**HOC** comes
 
 **U**n**HOC** is an extensible utility library for automatically unwrapping each HOC and allowing you to test with the original component.
 
-<sub>**TODO**: Add documentation & examples</sub>
+1. Import `@unhoc/core` and any plugins you wish to use. E.g. `@unhoc/react`
+
+```js
+import createUnHOC from '@unhoc/core';
+import { unHOCMemo } from '@unhoc/react';
+```
+
+2. Initialize **U**n**HOC** function.
+
+```javascript
+const unhoc = createUnHOC({
+  plugins: [unHOCMemo()],
+});
+```
+
+3. Unwrap your React components for testing.
+
+```javascript
+const unwrapped = unhoc(<Component />);
+```
+
+See `./packages/[plugin]/examples` for examples on specific **U**n**HOC** plugins.
+
+## Packages
+
+| Plugin                                                  | Package                                        | Description                                                                            |
+| ------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Core                                                    | [`@unhoc/core`](./packages/core)               | The core functionality of **U**n**HOC**, configures and runs plugins that unwrap HOCs. |
+| [React](https://github.com/facebook/react)↗︎            | [`@unhoc/react`](./packages/react)             | Unwraps HOCs built into `react` E.g. `React.memo`.                                     |
+| [React Redux](https://github.com/reduxjs/react-redux)↗︎ | [`@unhoc/react-redux`](./packages/react-redux) | Unwraps HOCs from `react-redux` E.g. `connect`.                                        |
+| [Material UI](https://github.com/mui-org/material-ui)↗︎ | [`@unhoc/material-ui`](./packages/material-ui) | Unwraps HOCs from `@material-ui` E.g. `withStyles`.                                    |
 
 ## Development
 
@@ -110,25 +138,9 @@ yarn lint
 ### Plugins
 
 - [x] react `memo`
-  - [x] Implement
-  - [x] Tests
-  - [ ] Readme/Docs
-  - [ ] Published
 - [x] react-redux `connect`
-  - [x] Implement
-  - [x] Tests
-  - [ ] Readme/Docs
-  - [ ] Published
 - [x] @material-ui/styles `withStyles`
-  - [x] Implement
-  - [x] Tests
-  - [ ] Readme/Docs
-  - [ ] Published
 - [ ] react-router `withRouter`
-  - [ ] Implement
-  - [ ] Tests
-  - [ ] Readme/Docs
-  - [ ] Published
 
 ### Integrations
 
@@ -139,15 +151,15 @@ yarn lint
 - [ ] Documentation
   - [x] Motivation
   - [x] Installation
-  - [ ] Getting Started
+  - [x] Getting Started
   - [ ] Developing a Plugin
 - [ ] Development
   - [x] Add LICENSE
   - [x] CONTRIBUTING
   - [x] CODE_OF_CONDUCT
-  - [x] Add Lerna
   - [x] Add Git Hooks
-  - [ ] Add CI/CD
+  - [x] Add CI
+  - [ ] Add CD
 
 ## Versioning
 

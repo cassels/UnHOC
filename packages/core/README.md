@@ -116,7 +116,10 @@ See [examples](./examples) for full test files.
 
 Configures an **U**n**HOC** function to be used in unit tests.
 
-**params**: [UnHOCConfig](#UnHOCConfig)  
+| Params | Type                        |
+| ------ | --------------------------- |
+| config | [UnHOCConfig](#UnHOCConfig) |
+
 **returns**: [UnHOCNext](#UnHOCNext)
 
 ### `UnHOCConfig`
