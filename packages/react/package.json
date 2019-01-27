@@ -1,7 +1,7 @@
 {
   "name": "@unhoc/react",
   "version": "0.0.0",
-  "description": "Effortlessly UnHOC React Components from React HOCs for simple unit testing.",
+  "description": "Effortlessly UnHOC React Components from React for simple unit testing.",
   "keywords": [
     "unhoc",
     "hoc",
@@ -19,8 +19,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -30,5 +29,12 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cassels/UnHOC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cassels/UnHOC/issues"
   }
 }

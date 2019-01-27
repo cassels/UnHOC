@@ -1,7 +1,7 @@
 {
   "name": "@unhoc/react-redux",
   "version": "0.0.0",
-  "description": "Effortlessly UnHOC React Components from react-redux HOCs for simple unit testing.",
+  "description": "Effortlessly UnHOC React Components from react-redux for simple unit testing.",
   "keywords": [
     "unhoc",
     "hoc",
@@ -32,6 +32,13 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cassels/UnHOC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cassels/UnHOC/issues"
   },
   "peerDependencies": {
     "react-redux": "^6.0.0"
