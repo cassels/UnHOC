@@ -1,1 +1,1 @@
-export { UnMemo } from './memo';
+export { unHOCMemo } from './memo';

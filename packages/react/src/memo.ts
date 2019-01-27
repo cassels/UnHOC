@@ -1,6 +1,6 @@
 import { UnHOCPlugin } from '@unhoc/core';
 
-export const UnMemo = (): UnHOCPlugin => (node, next) => {
+export const unHOCMemo = (): UnHOCPlugin => (node, next) => {
   if (
     typeof node.type === 'object' &&
     (node.type as any).$$typeof === Symbol.for('react.memo')
