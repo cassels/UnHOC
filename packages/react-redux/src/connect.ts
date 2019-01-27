@@ -1,8 +1,8 @@
 import { UnHOCPlugin } from '@unhoc/core';
 
 export const unHOCConnect = (
-  mockStateToProps?: { [key: string]: any },
-  mockDispatchToProps?: { [key: string]: any }
+  mockState?: { [key: string]: any },
+  mockDispatch?: { [key: string]: any }
 ): UnHOCPlugin => (node, next) => {
   if (typeof node.type === 'function' && (node.type as any).WrappedComponent) {
     const unwrappedNode = Object.create(node, {
@@ -16,8 +16,8 @@ export const unHOCConnect = (
         enumerable: true,
         value: {
           ...node.props,
-          ...mockStateToProps,
-          ...mockDispatchToProps,
+          ...mockState,
+          ...mockDispatch,
         },
       },
     });
