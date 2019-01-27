@@ -13,9 +13,8 @@
     "testing"
   ],
   "author": "Graeme Cassels <graeme.cassels@googlemail.com> (https://github.com/cassels)",
-  "homepage": "",
   "license": "MIT",
-  "main": "lib/core.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
@@ -27,7 +26,8 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && rm -rf lib"
+    "clean:lib": "rm -rf lib",
+    "clean:node": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",

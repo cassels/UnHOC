@@ -6,9 +6,10 @@
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:watch": "jest --watchAll",
     "lint": "prettier --write '**/**/*.{ts,tsx,js,jsx}'",
-    "clean": "rm -rf node_modules && yarn workspaces run clean",
-    "build": "tsc --build tsconfig.build.json",
-    "publish": "lerna publish prepatch"
+    "clean": "yarn run clean:lib && yarn run clean:node",
+    "clean:lib": "yarn workspaces run clean:lib",
+    "clean:node": "rm -rf node_modules && yarn workspaces run clean:node",
+    "build": "yarn run clean:lib && tsc --build tsconfig.build.json"
   },
   "workspaces": [
     "packages/*"

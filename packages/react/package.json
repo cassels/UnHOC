@@ -28,7 +28,8 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && rm -rf lib"
+    "clean:lib": "rm -rf lib",
+    "clean:node": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",

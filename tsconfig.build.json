@@ -12,7 +12,7 @@
     // --- Build specific compilerOptions hencefort ---
 
     "target": "es6",
-    "module": "es6",
+    "module": "commonjs",
 
     // Important. Without this the compiler will complain it cannot find a referenced
     // package during a build.
