@@ -17,21 +17,21 @@ const ConnectedComponent = connect(
   mapDispatchToProps
 )(Component);
 
-import { UnConnect } from './index';
+import { unHOCConnect } from './index';
 
 describe('react-redux', () => {
   describe('connect', () => {
     test('use without error', () => {
       expect(() => {
         createUnHOC({
-          plugins: [UnConnect()],
+          plugins: [unHOCConnect()],
         })(<ConnectedComponent comp="comp" />);
       }).not.toThrow();
     });
 
     test('unwrap with props', () => {
       const unhoc = createUnHOC({
-        plugins: [UnConnect({ state: 'state' }, { dispatch: 'dispatch' })],
+        plugins: [unHOCConnect({ state: 'state' }, { dispatch: 'dispatch' })],
       });
       expect(unhoc(<ConnectedComponent comp="comp" />)).toEqual(
         <Component comp="comp" state="state" dispatch="dispatch" />

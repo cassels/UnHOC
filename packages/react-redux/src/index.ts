@@ -1,1 +1,1 @@
-export { UnConnect } from './connect';
+export { unHOCConnect } from './connect';

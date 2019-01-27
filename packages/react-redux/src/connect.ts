@@ -1,6 +1,6 @@
 import { UnHOCPlugin } from '@unhoc/core';
 
-export const UnConnect = (
+export const unHOCConnect = (
   mockStateToProps?: { [key: string]: any },
   mockDispatchToProps?: { [key: string]: any }
 ): UnHOCPlugin => (node, next) => {
