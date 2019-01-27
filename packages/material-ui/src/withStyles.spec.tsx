@@ -20,21 +20,21 @@ const Component: React.FunctionComponent<
 > = () => <div />;
 const WithStylesComponent = withStyles(styles)(Component);
 
-import { UnWithStyles } from './index';
+import { unHOCWithStyles } from './index';
 
 describe('material-ui', () => {
   describe('withStyles', () => {
     test('use without error', () => {
       expect(() => {
         createUnHOC({
-          plugins: [UnWithStyles(styles, options)],
+          plugins: [unHOCWithStyles(styles, options)],
         })(<WithStylesComponent comp="comp" />);
       }).not.toThrow();
     });
 
     test('unwrap with props', () => {
       const unhoc = createUnHOC({
-        plugins: [UnWithStyles(styles, options)],
+        plugins: [unHOCWithStyles(styles, options)],
       });
       expect(unhoc(<WithStylesComponent comp="comp" />)).toEqual(
         <Component comp="comp" classes={{ styles: 'styles' }} />
@@ -43,7 +43,7 @@ describe('material-ui', () => {
 
     test('unwrap with props', () => {
       const unhoc = createUnHOC({
-        plugins: [UnWithStyles(styles, options)],
+        plugins: [unHOCWithStyles(styles, options)],
       });
       expect(unhoc(<WithStylesComponent comp="comp" />)).toEqual(
         <Component comp="comp" classes={{ styles: 'styles' }} />

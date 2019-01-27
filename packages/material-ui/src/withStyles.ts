@@ -2,7 +2,7 @@ import { UnHOCPlugin } from '@unhoc/core';
 import * as React from 'react';
 import jss, { StyleSheetFactoryOptions } from 'jss';
 
-export const UnWithStyles = (
+export const unHOCWithStyles = (
   styles: { [key: string]: any },
   options?: StyleSheetFactoryOptions
 ): UnHOCPlugin => (node, next) => {

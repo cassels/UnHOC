@@ -1,1 +1,1 @@
-export { UnWithStyles } from './withStyles';
+export { unHOCWithStyles } from './withStyles';
