@@ -5,6 +5,7 @@
 [![TravisCI](https://img.shields.io/travis/cassels/UnHOC/master.svg?style=flat-square)](https://travis-ci.org/cassels/UnHOC)
 [![Coveralls](https://img.shields.io/coveralls/github/cassels/UnHOC.svg?style=flat-square)](https://coveralls.io/github/cassels/UnHOC)
 [![Contributors](https://img.shields.io/github/contributors/cassels/unhoc.svg?style=flat-square)](README.md#Contributors)
+[![NPM Downloads](https://img.shields.io/npm/dt/@unhoc/core.svg?style=flat-square)](https://www.npmjs.com/org/unhoc)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/github/license/cassels/unhoc.svg?style=flat-square)](LICENSE)
 
@@ -78,12 +79,12 @@ See `./packages/[plugin]/examples` for examples on specific **U**n**HOC** plugin
 
 ## Packages
 
-| Plugin                                                  | Package                                        | Description                                                                            |
-| ------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Core                                                    | [`@unhoc/core`](./packages/core)               | The core functionality of **U**n**HOC**, configures and runs plugins that unwrap HOCs. |
-| [React](https://github.com/facebook/react)↗︎            | [`@unhoc/react`](./packages/react)             | Unwraps HOCs built into `react` E.g. `React.memo`.                                     |
-| [React Redux](https://github.com/reduxjs/react-redux)↗︎ | [`@unhoc/react-redux`](./packages/react-redux) | Unwraps HOCs from `react-redux` E.g. `connect`.                                        |
-| [Material UI](https://github.com/mui-org/material-ui)↗︎ | [`@unhoc/material-ui`](./packages/material-ui) | Unwraps HOCs from `@material-ui` E.g. `withStyles`.                                    |
+| Plugin                                                  | Package                                        | Description                                                                            | Version                                                                                                                        |
+| ------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Core                                                    | [`@unhoc/core`](./packages/core)               | The core functionality of **U**n**HOC**, configures and runs plugins that unwrap HOCs. | [![](https://img.shields.io/npm/v/@unhoc/core.svg?style=flat-square)](https://www.npmjs.com/package/@unhoc/core)               |
+| [React](https://github.com/facebook/react)↗︎            | [`@unhoc/react`](./packages/react)             | Unwraps HOCs built into `react` E.g. `React.memo`.                                     | [![](https://img.shields.io/npm/v/@unhoc/react.svg?style=flat-square)](https://www.npmjs.com/package/@unhoc/react)             |
+| [React Redux](https://github.com/reduxjs/react-redux)↗︎ | [`@unhoc/react-redux`](./packages/react-redux) | Unwraps HOCs from `react-redux` E.g. `connect`.                                        | [![](https://img.shields.io/npm/v/@unhoc/react-redux.svg?style=flat-square)](https://www.npmjs.com/package/@unhoc/react-redux) |
+| [Material UI](https://github.com/mui-org/material-ui)↗︎ | [`@unhoc/material-ui`](./packages/material-ui) | Unwraps HOCs from `@material-ui` E.g. `withStyles`.                                    | [![](https://img.shields.io/npm/v/@unhoc/material-ui.svg?style=flat-square)](https://www.npmjs.com/package/@unhoc/material-ui) |
 
 ## Development
 
