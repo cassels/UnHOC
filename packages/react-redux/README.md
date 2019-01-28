@@ -1,4 +1,4 @@
-<h1 align="center">UnHOC Material UI</h1>
+<h1 align="center">UnHOC React Redux</h1>
 
 <div align="center">
 
