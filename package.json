@@ -9,7 +9,8 @@
     "clean": "yarn run clean:lib && yarn run clean:node",
     "clean:lib": "yarn workspaces run clean:lib",
     "clean:node": "rm -rf node_modules && yarn workspaces run clean:node",
-    "build": "yarn run clean:lib && tsc --build tsconfig.build.json"
+    "build": "yarn run clean:lib && tsc --build tsconfig.build.json",
+    "release": "lerna publish --conventional-commits"
   },
   "workspaces": [
     "packages/*"
