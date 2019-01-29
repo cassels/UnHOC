@@ -1,6 +1,6 @@
 {
   "name": "@unhoc/react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Effortlessly UnHOC React Components from React for simple unit testing.",
   "keywords": [
     "unhoc",

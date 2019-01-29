@@ -1,6 +1,6 @@
 {
   "name": "@unhoc/react-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Effortlessly UnHOC React Components from react-redux for simple unit testing.",
   "keywords": [
     "unhoc",

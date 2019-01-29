@@ -1,6 +1,6 @@
 {
   "name": "@unhoc/material-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Effortlessly UnHOC React Components from material-ui for simple unit testing.",
   "keywords": [
     "unhoc",
